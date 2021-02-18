@@ -1,21 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
-import {Route, BrowserRouter as Router } from "react-router-dom"
+//import './App.css';
+import {Route, BrowserRouter as Router, Link, Switch} from "react-router-dom"
+import Exercise1 from "./Exercise1" 
 function App() {
   return (
     <div className="App">
       <header>
-        <img src = 'https://epicsports.cachefly.net/images/52253/300/fan-mats-nba-boston-celtics-court-runner.jpg'/>
-        <img src = "Championship.png" width = "240" px height = "170" px />
       
-        <h1> Curriculm</h1>
-        <h3> Useful Link</h3>
-       <p>Set up Call with Instructor<a href="https://calendly.com" target = '_blank' rel = "noopener noreferrer"> Here</a> or email sachin@wynisco.com</p>
-       
-        <h2> Core Topics</h2>
-        <h2> Welcome to the Course </h2>
-        <h4> Application Architecuture</h4>
+
+      
+      <Router>
         
+      <Link to="/"> Home  </Link>
+      <Link to="/Exercise1"> Exercise1  </Link>
+      <Switch>
+
+        <Route path = "/Exercise1" component = {Exercise1}> </Route>
+        
+      </Switch>
+        </Router>  
  </header>
     </div>
   );
