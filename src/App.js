@@ -5,23 +5,37 @@ import Exercise1 from "./Exercise1"
 function App() {
   return (
     <div className="App">
-      
-      
-
-      
       <Router>
-        
-      <Link to="/"> Home  </Link>
-      <Link to="/Exercise1"> Exercise1  </Link>
-      <Switch>
 
-        <Route path = "/Exercise1" component = {Exercise1}/> 
+        <li>
+          <Link to="/"> Home </Link>
+        </li>
+        <br></br>
+
+        <li>
+          <Link to="/Github"> Github </Link>
+        </li>
+        <br></br>
+
+        <li>
+          <Link to="/Exercise1"> Exercise1 </Link>
+        </li>
+
+        <Switch>
+          <Route path="/Exercise1" component={Exercise1} />
+          <Route path='/Github' component={() => { 
+     window.location.replace('https://github.com/ronishkhadgi3/playground'); 
+     return null;
+}}/>
+        </Switch>
         
-      </Switch>
-        </Router>  
- 
+
+        
+      
+        
+      </Router>
+
     </div>
   );
 }
-
 export default App;
