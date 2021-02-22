@@ -1,6 +1,9 @@
 .App {
   text-align: left;
-  
+}
+
+body {
+  background-color: lightblue;
 }
 
 .App-logo {
@@ -38,3 +41,33 @@
   }
 }
 
+.navbar {
+  position: static;
+  top:0;
+  border: 3px dotted white;
+  width: 100%;
+  color: white; 
+  background-color: lightgrey;
+  text-align: center;
+  font-family: cursive;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
