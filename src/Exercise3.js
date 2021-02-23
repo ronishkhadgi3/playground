@@ -8,7 +8,7 @@ function Theme() {
     return (
         <div>
             <div className={theme}> Click to Change</div>
-            <button className="Button" onClick={()=>setTheme('darktheme')}> Click Button </button>
+            <button className="button" onClick={()=>setTheme('darktheme')}> Click Button </button>
             
             
         </div>

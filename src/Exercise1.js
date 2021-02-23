@@ -43,8 +43,8 @@ function Exercise1() {
           type="date"
           id="date"
           name="date"
-          value="today"
-          min="today"
+          value="Today"
+          min="Today"
           max="2121-2-17"
         ></input>{" "}
         <br></br>
