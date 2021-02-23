@@ -14,7 +14,7 @@ function App() {
         <div className="navbar">
           <ul>
             <li>
-              <Link to="/Exercise"> Home </Link>
+              <Link to="/"> Home </Link>
             </li>
 
             <li>
@@ -36,7 +36,7 @@ function App() {
         </div>
 
         <Switch>
-          <Route path="/Exercise" component={Exercise} />
+          <Route exact path="/" component={Exercise} />
           <Route path="/Exercise1" component={Exercise1} />
           <Route path="/Exercise2" component={Exercise2} />
           <Route path="/Exercise3" component={Exercise3} />
