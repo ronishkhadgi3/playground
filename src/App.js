@@ -6,6 +6,7 @@ import Exercise from "./Exercise";
 import Exercise1 from "./Exercise1";
 import Exercise2 from "./Exercise2";
 import Exercise3 from "./Exercise3";
+
 function App() {
   return (
     <div className="App">
@@ -39,6 +40,7 @@ function App() {
           <Route path="/Exercise1" component={Exercise1} />
           <Route path="/Exercise2" component={Exercise2} />
           <Route path="/Exercise3" component={Exercise3} />
+
           <Route
             path="/Github"
             component={() => {
